@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Responsive Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+
+    <!-- navgaition menu -->
+    <nav>
+      <div class="nav-container">
+          <div class="logo"  data-aos="zoom-in" data-aos-duration="1100">
+            Priya <span> G Padanad</span>
+          </div>
+       <div class="links">
+  <div class="link" onclick="scrollToSection('hero')" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100">
+    Home
+  </div>
+  <div class="link" onclick="scrollToSection('about')" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
+    About
+  </div>
+  <div class="link" onclick="scrollToSection('skills')" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">
+    Skills
+  </div>
+  <div class="link" onclick="scrollToSection('services')" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="400">
+    Projects
+  </div>
+  <div class="link" onclick="scrollToSection('contact')" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="500">
+    Contact
+  </div>
+</div>
+
+
+      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+  </div>
+      <div class="dropdown">
+          <div class="links">
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Skills</a>
+              <a href="#">Projects</a>
+              <a href="#">Contact</a>
+              <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+          </div>
+      </div>
+  </nav>
+  <section id="hero">
+      <div class="main-container">
+          <div class="image" data-aos="zoom-in" data-aos-duration="2500">
+              <img src="test.png" alt="">
+          </div>
+          <div class="content">
+              <h1 data-aos="fade-left" data-aos-duration="1100" data-aos-delay="700">Hey I'm <span>Priya </span></h1>
+              <div class="typewriter"  data-aos="fade-right" data-aos-duration="1100" data-aos-delay="900">I'm a <span class="typewriter-text"></span><label for="">|</label></div>
+              <p data-aos="flip-up" data-aos-duration="1100" data-aos-delay="1100"> </p>
+              <div class="social-links">
+                  <a href="https://github.com/PriyaGPadanad" data-aos="zoom-out" data-aos-duration="1100" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/priya-g-padanad/"  data-aos="fade-up" data-aos-duration="1100" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="mailto:priyagpadanad@gmail.com"  data-aos="fade-up" data-aos-duration="1100" data-aos-delay="1600"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+              <div class="btn"  data-aos="zoom-in-left" data-aos-duration="1100" data-aos-delay="1700">
+                  <button>Hire me</button>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+  <!-- About Section Start -->
+
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title" data-aos="fade-up" data-aos-duration="1100"><span>About Me</span></div>
+      <div class="about-details">
+        <div class="left"  data-aos="fade-right" data-aos-duration="1100" data-aos-delay="100">
+          <img src="mainnew.png" alt="" />
+        </div>
+        <div class="right" >
+            <p class="about-text" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="200">I am <span>Priya G Padanad</span> and i am a <span>Developer. </span> Trained in core software development concepts. A fresher ready to turn learning into real-world impact.</p>
+            <div class="exp-area">
+              <p class="exp" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300"> 
+                Experience:                                                                                                                                     
+                <span>Fresher</span>
+              </p>
+              
+              <p class="exp" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="400">
+                Speciality:
+                <span>Java Developer</span>
+              </p>
+              <p class="exp" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="500">
+                Address: 
+                <span>Bangalore, India</span>
+              </p>
+              
+              <p class="exp" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="600">
+                Email: 
+                <span>priyagpadanad@gmail.com</span>
+              </p>
+              
+              <p class="exp" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="700">
+                Phone: 
+                <span>+91 8722204601</span>
+              </p>
+              
+          
+            </div>
+            <div class="button" data-aos="zoom-out" data-aos-duration="1100" data-aos-delay="900">
+              <button id="view-projects">View Projects</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+    <!-- My Skill Section Start -->
+    <section class="skills" id="skills">
+      <div class="content">
+        <div class="title" data-aos="fade-up" data-aos-duration="1100"><span>My Skills</span></div>
+        <div class="skills-details">
+          <div class="text">
+            <div class="topic" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="100">Skills Reflects Our Knowledge</div>
+            <p data-aos="flip-down" data-aos-duration="1100" data-aos-delay="200">Trained in Java Full Stack Development with strong understanding of OOP concepts, Core Java, and Java 8 features. Hands-on experience with Collections, Exception Handling, Servlets, JSP, JDBC, JPA, Spring MVC, and Spring Boot. Familiar with Lombok, Apache Tomcat, and web technologies like HTML, CSS, JavaScript, and Bootstrap. Good knowledge of SQL including Joins, Aggregate Functions, Constraints, and Subqueries.</p>
+            <div class="experience" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="300">
+              <div class="num"></div>
+            </div>
+          </div>
+          <div class="boxes">
+             <div class="box" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="700">
+              <div class="topic">Java</div>
+              <div class="per">90%</div>
+            </div>
+             <div class="box" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="700">
+              <div class="topic">Servlet</div>
+              <div class="per">80%</div>
+            </div>
+             <div class="box" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="700">
+              <div class="topic">JDBC</div>
+              <div class="per">80%</div>
+            </div>
+             <div class="box" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="700">
+              <div class="topic">JSP</div>
+              <div class="per">80%</div>
+            </div>
+            <div class="box" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="400">
+              <div class="topic" >Spring MVC</div>
+              <div class="per" >80%</div>
+            </div>
+            <div class="box" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="500">
+              <div class="topic">JPA</div>
+              <div class="per">80%</div>
+            </div>
+            <div class="box" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="700">
+              <div class="topic">SQL</div>
+              <div class="per">90%</div>
+            </div>
+            <div class="box" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="900">
+              <div class="topic">HTML</div>
+              <div class="per">90%</div>
+            </div>
+            <div class="box" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="1000">
+              <div class="topic">CSS</div>
+              <div class="per">80%</div>
+            </div>
+            <div class="box" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="800">
+              <div class="topic">Bootstrap</div>
+              <div class="per">90%</div>
+          </div>
+            <div class="box" data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="600">
+              <div class="topic">JavaScript</div>
+              <div class="per">70%</div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Services Section Start -->
+    <section class="services" id="services">
+      <div class="content">
+        <div class="title" data-aos="fade-up" data-aos-duration="1100"><span>My Projects</span></div>
+        <div class="boxes">
+          <div class="box" data-aos="fade-right" data-aos-duration="1100" data-aos-delay="100">
+            <div class="icon">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <div class="topic"> Public Holiday Tracker Web Application</div>
+            <p> • Developed a responsive and interactive web application to track public holidays across multiple countries
+ using real-time data.<br>
+ • Integrated the Calendarific Public Holiday API to fetch official holidays based on user-selected country and
+ year.<br>
+ • Designed an intuitive UI using HTML, CSS, and vanilla JavaScript, with dark/light background themes for
+ a better user experience.<br>
+ • Used dynamic DOM manipulation to display results and loading states, improving visual feedback during
+ API calls<br></p>
+ <div class="btn"  data-aos="zoom-in-left" data-aos-duration="1100" data-aos-delay="1700">
+    <button onclick="window.open('https://priyagpadanad.github.io/Public-Holiday-Tracker-Web-App/', '_blank')" class="project-link-button">Live Link</button>
+</div>
+
+          </div>
+          
+    </section>
+    
+    <script src="script.js"></script>
+    <!-- Contact Me section Start -->
+    <section class="contact" id="contact">
+      <div class="content">
+        <div class="title" data-aos="fade-up" data-aos-duration="1100"><span>Contact Me</span></div>
+        <div class="text">
+          <div class="topic" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="100">Have Any Project?</div>
+          <p data-aos="fade-right" data-aos-duration="1100" data-aos-delay="200"><p data-aos="fade-right" data-aos-duration="1100" data-aos-delay="200">
+  Have questions about any of my projects or want to collaborate? Feel free to reach out using the form below—I'll get back to you as soon as possible!
+</p>
+</p>
+        </div>
+        <div class="contact-form-container">
+          <form class="contact-form">
+              
+              <label for="name" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">
+  
+              <label for="email" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="400">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required data-aos="fade-up" data-aos-duration="1100" data-aos-delay="400">
+  
+              <label for="phone" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="500">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required data-aos="fade-up" data-aos-duration="1100" data-aos-delay="500">
+  
+              <label for="message" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="600">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your Message" required data-aos="fade-up" data-aos-duration="1100" data-aos-delay="600"></textarea>
+  
+              <button type="submit" class="contact-btn" data-aos="zoom-in-up" data-aos-duration="1100" data-aos-delay="700">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section Start -->
+    <footer >
+      <div class="text">
+        <span>Created By <a href="#">Priya G Padanad</a> | &#169; 2025 All Rights Reserved</span>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script>
+      function hamburg(){
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = 'translateY(0px)';
+      }
+      function cancel(){
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = 'translateY(-500px)';
+      }
+
+
+      document.getElementById("view-projects").addEventListener("click", function () {
+    const section = document.getElementById("services");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+    </script>
+  </body>
+  
+  
+</html> 
